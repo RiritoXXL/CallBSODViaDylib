@@ -17,7 +17,7 @@ int main()
 		ExitProcess(554);
 	}
 	RtlAdjustPrivilege(19, 1, 0, &bl);
-	NtRaiseHardError(0xC00000FD, 0, 0, 0, 6, &response);
+	NtRaiseHardError(0xDEADDEAD, 0, 0, 0, 6, &response);
 	exit(431);
 	return 0;
 }
